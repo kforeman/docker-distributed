@@ -39,6 +39,8 @@ spec:
           volumeMounts:
             - mountPath: /work/docker-distributed
               name: docker-distributed-repo
+          securityContext:
+            privileged: true
       volumes:
         - name: docker-distributed-repo
           gitRepo:

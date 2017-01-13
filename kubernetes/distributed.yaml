@@ -51,6 +51,8 @@ spec:
           ports:
           - name: rpc
             containerPort: 8786
+          securityContext:
+            privileged: true
 ---
 apiVersion: v1
 kind: ReplicationController
@@ -71,3 +73,5 @@ spec:
         - name: dworker
           image: kforeman/distributed:latest
           args: ["start-dworker.sh"]
+          securityContext:
+            privileged: true
