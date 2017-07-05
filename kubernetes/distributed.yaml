@@ -61,7 +61,7 @@ metadata:
     name: dworker
   name: dworker
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     name: dworker
   template:
