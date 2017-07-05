@@ -1,4 +1,5 @@
 joblib
+pyarrow
 git+https://github.com/cloudpipe/cloudpickle.git
 git+https://github.com/dask/dask.git
 git+https://github.com/dask/distributed.git
